@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "652619464806",
+    "firebase_url": "https://pbrewards-cbfca-default-rtdb.firebaseio.com",
+    "project_id": "pbrewards-cbfca",
+    "storage_bucket": "pbrewards-cbfca.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652619464806:android:8665830692172866e42da7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa4hU5ynf8CnvD9qOZCH4kj0cb9X6wCGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
