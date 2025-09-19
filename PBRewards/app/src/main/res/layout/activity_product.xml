@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar with Back Button and Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1A0D64"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PBRewards"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow_foreground"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:layout_gravity="start" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Reward Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cake"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/btnCake"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="100 points"
+                    android:textColor="#FFD700"
+                    android:backgroundTint="#1A0D64"
+                    app:cornerRadius="50dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Cake Slice"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Reward Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="16dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sandwich"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/btnSandwich"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="300 points"
+                    app:cornerRadius="50dp"
+                    android:textColor="#FFD700"
+                    android:backgroundTint="#1A0D64"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Sandwich, Salad or Wrap"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Reward Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="16dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/wholecake"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/btnWholeCake"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="200 points"
+                    app:cornerRadius="50dp"
+                    android:textColor="#FFD700"
+                    android:backgroundTint="#1A0D64"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Whole Cake"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Reward Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="16dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cakeroll"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/btnCakeRoll"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="200 points"
+                    app:cornerRadius="50dp"
+                    android:textColor="#FFD700"
+                    android:backgroundTint="#1A0D64"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Roll Cake"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
