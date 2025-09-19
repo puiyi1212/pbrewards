@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+    <item name="colorAccent">@color/black</item>
+    <item name="android:windowBackground">@drawable/rounded_edit_text</item> <!-- Set the custom drawable here -->
+</style>
+</resources>
